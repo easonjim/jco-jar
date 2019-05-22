@@ -14,12 +14,3 @@ Maven repository (variant a) or deploy it to e.g. an enterprise Maven repository
 
 (a) mvn install:install-file -DgroupId=com.github.easonjim -DartifactId=com.sap.conn.jco.sapjco3 -Dversion=3.0 -Dpackaging=jar -Dfile=path/to/sapjco3.jar
 (b) mvn deploy:deploy-file -DrepositoryId=[your.repo.id] -DgroupId=com.github.easonjim -DartifactId=com.sap.conn.jco.sapjco3 -Dversion=3.0 -Dpackaging=jar -Dfile=path/to/sapjco3.jar
-
-Maven:
-```xml
-<dependency>
-  <groupId>com.github.easonjim</groupId>
-  <artifactId>com.sap.conn.jco.sapjco3</artifactId>
-  <version>3.0.11</version>
-</dependency>
-```
