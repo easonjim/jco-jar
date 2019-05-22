@@ -11,10 +11,11 @@ to SAP System as well as SAP System to Java calls.
 -   All SAP users accessing application functionality through the relevant connector are required to be licensed under a
     respective solution or component license.
 
-To use the SAP JCo with the jco-jar project, you need to either install the SAP JCo jar downloaded from SAP to your local
+To use the SAP JCo with the jco-jar project, you need to either install the SAP JCo jar downloaded from SAP([http://service.sap.com/connectors](http://service.sap.com/connectors)) to your local
 Maven repository (variant a) or deploy it to e.g. an enterprise Maven repository like Nexus or Artifactory (variant b):
 
 (a) mvn install:install-file -DgroupId=com.github.easonjim -DartifactId=com.sap.conn.jco.sapjco3 -Dversion=3.0 -Dpackaging=jar -Dfile=path/to/sapjco3.jar  
+
 (b) mvn deploy:deploy-file -DrepositoryId=[your.repo.id] -DgroupId=com.github.easonjim -DartifactId=com.sap.conn.jco.sapjco3 -Dversion=3.0 -Dpackaging=jar -Dfile=path/to/sapjco3.jar
 
 Maven:
