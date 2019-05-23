@@ -16,11 +16,11 @@ Maven repository (variant a) or deploy it to e.g. an enterprise Maven repository
 
 (a) 
 ```shell
-mvn install:install-file -DgroupId=com.github.easonjim -DartifactId=com.sap.conn.jco.sapjco3 -Dversion=3.0 -Dpackaging=jar -Dfile=path/to/sapjco3.jar  
+mvn install:install-file -DgroupId=com.github.easonjim -DartifactId=com.sap.conn.jco.sapjco3 -Dversion=3.0.11 -Dpackaging=jar -Dfile=path/to/sapjco3.jar  
 ```
 (b) 
 ```shell
-mvn deploy:deploy-file -DrepositoryId=[your.repo.id] -DgroupId=com.github.easonjim -DartifactId=com.sap.conn.jco.sapjco3 -Dversion=3.0 -Dpackaging=jar -Dfile=path/to/sapjco3.jar
+mvn deploy:deploy-file -DrepositoryId=[your.repo.id] -DgroupId=com.github.easonjim -DartifactId=com.sap.conn.jco.sapjco3 -Dversion=3.0.11 -Dpackaging=jar -Dfile=path/to/sapjco3.jar
 ```
 (3)   
 Use Maven Central Repositories, Not install or deploy!  
