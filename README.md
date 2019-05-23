@@ -23,7 +23,7 @@ mvn install:install-file -DgroupId=com.github.easonjim -DartifactId=com.sap.conn
 mvn deploy:deploy-file -DrepositoryId=[your.repo.id] -DgroupId=com.github.easonjim -DartifactId=com.sap.conn.jco.sapjco3 -Dversion=3.0.11 -Dpackaging=jar -Dfile=path/to/sapjco3.jar
 ```
 (c)   
-Use maven central repositories, Not install or deploy!  
+Use maven central repositories, Not download and install or deploy!  
 
 In project, Include the dependency:
 ```xml
