@@ -1,4 +1,4 @@
-This project fork to [hibersap-sapjco3](https://github.com/hibersap/hibersap-sapjco3)  
+This project fork by [hibersap-sapjco3](https://github.com/hibersap/hibersap-sapjco3)  
 
 The SAP Java Connector (SAP JCo) is a toolkit that allows a Java application to communicate with any SAP system.
 It combines an easy to use API with unprecedented flexibility and performance. The package supports both, Java
@@ -22,8 +22,10 @@ mvn install:install-file -DgroupId=com.github.easonjim -DartifactId=com.sap.conn
 ```shell
 mvn deploy:deploy-file -DrepositoryId=[your.repo.id] -DgroupId=com.github.easonjim -DartifactId=com.sap.conn.jco.sapjco3 -Dversion=3.0 -Dpackaging=jar -Dfile=path/to/sapjco3.jar
 ```
+(3)   
+Use Maven Central Repositories, Not install or deploy!  
 
-Maven:
+After in project, Include the dependency:
 ```xml
 <dependency>
   <groupId>com.github.easonjim</groupId>
