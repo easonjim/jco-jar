@@ -22,17 +22,31 @@ mvn install:install-file -DgroupId=com.github.easonjim -DartifactId=com.sap.conn
 ```shell
 mvn deploy:deploy-file -DrepositoryId=[your.repo.id] -DgroupId=com.github.easonjim -DartifactId=com.sap.conn.jco.sapjco3 -Dversion=3.0.11 -Dpackaging=jar -Dfile=path/to/sapjco3.jar
 ```
-(3)   
-Use Maven Central Repositories, Not install or deploy!  
+(c)   
+Use maven central repositories, Not install or deploy!  
 
-After in project, Include the dependency:
+In project, Include the dependency:
 ```xml
 <dependency>
   <groupId>com.github.easonjim</groupId>
   <artifactId>com.sap.conn.jco.sapjco3</artifactId>
-  <version>3.0.11</version>
+  <version>${sapjco3-version}</version>
+</dependency>
+```
+If your project use hibersap, you must exclusion (org.hibersap-com.sap.conn.jco.sapjco3) dependency:
+```xml
+<dependency>
+	<groupId>org.hibersap</groupId>
+	<artifactId>hibersap-jco</artifactId>
+	<version>${hibersap.version}</version>
+	<exclusions>
+		<exclusion>
+			<groupId>org.hibersap</groupId>
+			<artifactId>com.sap.conn.jco.sapjco3</artifactId>
+		</exclusion>
+	</exclusions>
 </dependency>
 ```
 
-Maven Central Repositories Versions:
+Maven central repositories versions:
 * 3.0.11
