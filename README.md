@@ -33,6 +33,9 @@ In project, Include the dependency:
   <version>${sapjco3-version}</version>
 </dependency>
 ```
+Maven central repositories version list:
+* 3.0.11
+
 If your project use hibersap, you must exclusion (org.hibersap-com.sap.conn.jco.sapjco3) dependency:
 ```xml
 <dependency>
@@ -47,6 +50,3 @@ If your project use hibersap, you must exclusion (org.hibersap-com.sap.conn.jco.
 	</exclusions>
 </dependency>
 ```
-
-Maven central repositories versions:
-* 3.0.11
