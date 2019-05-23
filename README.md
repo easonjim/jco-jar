@@ -34,7 +34,7 @@ In project, Include the dependency:
 </dependency>
 ```
 Maven central repositories version list:
-* 3.0.11
+* 3.0.11(provide jco jar version: 3.0.11)
 
 If your project use hibersap, you must exclusion (org.hibersap-com.sap.conn.jco.sapjco3) dependency:
 ```xml
