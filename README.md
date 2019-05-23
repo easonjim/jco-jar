@@ -33,3 +33,6 @@ After in project, Include the dependency:
   <version>3.0.11</version>
 </dependency>
 ```
+
+Maven Central Repositories Versions:
+* 3.0.11
